@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Home Page</title>
+    <link rel="stylesheet" href="../public/Navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+   <div class="d-flex flex-row mb-3 p-2 bg-light">
+    <div class="p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Indian_Institute_of_Technology_Dharwad_Logo.svg/1200px-Indian_Institute_of_Technology_Dharwad_Logo.svg.png" height="50px" width="50px"></div>
+    <div class="p-2"><a href="/page1">Student Form</a></div>
+    <div class="p-2"><a href="/page2">Project Submission</a></div>
+    <div class="p-2"><a href="/page3">Alumni LeaderBoard</a></div>
+    <div class="p-2 flex-grow-1"><a href="/page4">Oppurtunities</a></div>
+    <div class="p-2"><h2 style="display:flex; :right;color:black;">SLEEPLESS HACKATHON</h2></div>
+   </div>
+    <main>
+        <section class="featured">
+            <h2>Featured Content</h2>
+            <p>This is some featured content on our website.</p>
+        </section>
+
+        <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            <ul>
+                {{#each posts}}
+                    <li><a href="/posts/{{id}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Random Website. All rights reserved.</p>
+    </footer>
+
+    <script src="/path/to/scripts.js"></script>
+</body>
+
+</html>

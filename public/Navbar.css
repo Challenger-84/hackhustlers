@@ -1,0 +1,7 @@
+.navbar{
+    background-color: white;
+}
+#nav-item > li:last-child
+{
+    float:right;
+}

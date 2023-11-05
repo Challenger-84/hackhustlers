@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fill in Your Resume</title> 
+    <style>
+        .main{
+    align-items: right;
+    background-color: darkviolet;
+}
+
+.main h2{
+    color:white;
+}
+.Name input{
+    width:100%;
+}
+.Data input{
+    border:solid 1px grey;
+    border-radius: 5px; 
+}
+
+.Data select{
+    align-items: right;
+    width:49%;
+    height:35px;
+    border:solid 1px grey;
+    border-radius: 5px
+}
+
+.Data textarea{
+    width:100%;
+    border:solid 1px grey;
+    border-radius: 5px
+}
+
+.Data{
+    margin-left:5%;
+    margin-right:5%;
+    color: black;
+    background-color: whitesmoke;
+    border: solid 1px black; 
+    border-radius: 4px;
+    
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="main">
+    <div class="d-flex flex-row mb-3 p-2 bg-light">
+        <div class="p-2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Indian_Institute_of_Technology_Dharwad_Logo.svg/1200px-Indian_Institute_of_Technology_Dharwad_Logo.svg.png" height="50px" width="50px"></div>
+        <div class="p-2"><a href="/page1">Student Form</a></div>
+        <div class="p-2"><a href="/page2">Project Submission</a></div>
+        <div class="p-2"><a href="/page3">Opportunities</a></div>
+        <div class="p-2 flex-grow-1"><a href="/page2">Project Submission</a></div>
+        <div class="p-2"><h2 style="display:flex; :right;color:black;">SLEEPLESS HACKATHON</h2></div>
+    </div>
+    <div class="d-flex flex-column mb-3 justify-content-center">
+        <div class="p-2 align-self-center"><h2>STUDENT SKILL FORM</h2></div>
+        <div class="Data p-2">
+            <form action="/page1" method="post">
+                <label for="Name"><h3>Name:</h3></label><br>
+                <div class="Name">
+                    <input type="text" id="Name" name="Name">
+                </div>
+                <div class="mt-3 mb-3">
+                    <label for="Year"><h3>Year and Branch:</h3></label> <br>    
+                    <select name="Year" id="Year" type="text">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                    <select name="Branch" id="Branch" type="text">
+                        <option value="CSE">CSE</option>
+                        <option value="EE">EE</option>
+                        <option value="ME">ME</option>
+                        <option value="MAC">MAC</option>
+                        <option value="CE">CE</option>
+                    </select>
+                </div>
+                <label for="Bio"><h3>Bio:</h3></label>
+                <textarea id="Bio" name="Bio" rows="10" cols="45">Fill in Bio here</textarea>
+                <label for="type of Project"><h3>Type of Project:</h3></label><br>
+                <input type="checkbox" id="vehicle1" name="Projects" value="Research Project">
+                <label for="vehicle1">Research Project</label><br>
+                <input type="checkbox" id="vehicle2" name="Projects" value="Internship">
+                <label for="vehicle2">Internship</label><br>
+                <input type="checkbox" id="vehicle3" name="Projects" value="Freelance Gig">
+                <label for="vehicle3">Freelance Gig</label><br>
+                <input type="checkbox" id="vehicle4" name="Projects" value="Club Project">
+                <label for="vehicle4">Club Project</label><br>
+
+                <div class="mt-3 mb-3">
+                    <label for="fieldslist-container"><h3>Field of project:</h3></label>
+                    <select id="fieldsdropdown" class="form-select">
+                        <option selected>Choose Field of Project</option>
+                        <option value="1">Machine Learning</option>
+                        <option value="2">Software Development</option>
+                        <option value="3">Robotics</option>
+                    </select>
+                </div>
+                <div id="fieldslist-container">
+                    <ul id="fieldslist"></ul>
+                </div>
+
+                <div class="mt-3 mb-3">
+                    <label for="fieldslist"><h3>Skills:</h3></label>
+                    <select id="Skill" class="form-select">
+                        <option selected>Skills</option>
+                        <option value="1">Front-End Developer</option>
+                        <option value="2">Back-End Developer</option>
+                        <option value="3">Full Stack Developer</option>
+                        <option value="4">Tensor Flow</option>
+                        <option value="5">CNN</option>
+                        <option value="6">Python</option>
+                    </select>
+                </div>
+                
+                <div class="align-items-center">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
