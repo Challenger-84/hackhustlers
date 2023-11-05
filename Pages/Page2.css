@@ -1,0 +1,55 @@
+#outerdiv-formcontainer{
+    margin : 4%;
+}
+
+.form-card{
+    background-color :cornflowerblue;
+
+    box-shadow: 10px 10px 10px gray;
+}
+
+.form-title{
+    margin-bottom: 20px;
+}
+
+.two-spilt-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.smaller-box{
+    width : 50%;
+}
+
+#reqiurementsTextbox{
+    border-bottom-left-radius: 0px;
+}
+
+#addreq_btn{
+    border-bottom-right-radius: 0px;
+}
+
+.list-container{
+    background-color:rgb(67, 111, 194);
+    padding: 10px;
+    border-style: solid;
+    border-color:rgb(67, 111, 194);
+    border-radius: 0px 0px 10px 10px;
+
+    margin-bottom: 10px;
+}
+
+.textboxbtn{
+    background-color:silver;
+    color: black;
+    border-color: silver;
+}
+
+#fieldsdropdown{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#submitbtn{
+    width: 25%;
+}

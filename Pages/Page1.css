@@ -1,0 +1,39 @@
+.main{
+    align-items: right;
+    background-color: darkviolet;
+}
+
+.main h2{
+    color:white;
+}
+.Name input{
+    width:100%;
+}
+.Data input{
+    border:solid 1px grey;
+    border-radius: 5px; 
+}
+
+.Data select{
+    align-items: right;
+    width:49%;
+    height:35px;
+    border:solid 1px grey;
+    border-radius: 5px
+}
+
+.Data textarea{
+    width:100%;
+    border:solid 1px grey;
+    border-radius: 5px
+}
+
+.Data{
+    margin-left:5%;
+    margin-right:5%;
+    color: black;
+    background-color: whitesmoke;
+    border: solid 1px black; 
+    border-radius: 4px;
+    
+}
