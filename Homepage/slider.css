@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #efefef;
+    background: url(../assets/sliderbag.jpg);
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 30px 10%;
+
+}
+
+
+.btn{
+    font-size: 20px;
+    font-family: "Ubuntu",sans-serif;
+    margin: 30px;
+    width: 120px;
+    background-color: orangered;
+    color: black;
+    padding:12px;
+    margin-right: 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    float: right;
+    text-align:center;
+}
+
+.btn:hover{ 
+    background-color:orange;
+    color: black;
+}
+
+.navbar {
+    background-color:rgb(41, 41, 41);
+    border-radius: 10px;
+    font-family: "Monserrat",sans-serif;
+    color: #fff;
+    padding: 1rem;
+    width: 1000px;
+    justify-content:space-between;
+    height: 60px;
+}
+a{
+    text-decoration: none;
+}
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 1rem;
+}
+.navbar ul{
+    overflow: auto;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+/* background-color: white; */
+border: 2px solid orangered;
+border-radius: 20px;
+/* color: #333; */
+padding: 5px;
+transition: all 0.1s ease;
+}
+
+.search{
+    float: right;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #f5f3f3;
+    border:0px;
+    border-radius: 20px 4px 4px 20px;
+    padding: 7px 20px;
+}
+
+.seachbtn{
+    float: right;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    padding: 7px 20px;
+    background-color: blue;
+    border: 0px;
+    border-radius: 4px 20px 20px 4px;
+    /* border-color: white; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.seachbtn:hover{
+    background-color: rgb(110, 71, 227);
+}
+
+.d-flex{
+    border-radius: 10px;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: gray; */
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4; /* Change the background to transparent */
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+
+.overlay::after{
+    border: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #4070f4; /* Set the background to the blue color */
+}
+
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4 ; /* Make the border white to match the circular margin */
+}
+
+.name{
+    font-size: 18px;
+    color: #707070;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin:14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: #265DF2;
+}
+
+.swiper-navBtn{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: blue;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+    
+}
